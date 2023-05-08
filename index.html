@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <title>TeknosChallenge</title>
+</head>
+<body>
+
+    <section class="seccion">
+
+    <!-- BARRA IZQUIERDA -->
+
+        <div class="wrapper">
+            <div class="logo">
+                <i class='bx bx-menu' id="menu_bar"></i>
+                <a href="#"><img src="gmail.png" alt=""></a>
+                
+            </div>
+    
+            <ul class="nav_bar">
+    
+                <div class="button_compose">
+                    <a href="#">
+                        <i class="bx bx-pencil"></i>
+                        <span class="nav_bar_name">Compose</span>
+                    </a>
+                </div>
+                <div class="spacing"></div>
+                <li id="inbox" ><a class="nav_bar_label"><i class="bx bxs-inbox"></i><span  class="nav_bar_name">Inbox</span></a></li>
+                <li id="starred"><a class="nav_bar_label"><i class="bx bx-star"></i><span class="nav_bar_name">Starred</span></a></li>
+                <li id="important"><a  class="nav_bar_label"><i class="bx bx-label"></i><span  class="nav_bar_name">Important</span></a></li>
+                <li id="sent"><a  class="nav_bar_label"><i class="bx bx-send"></i><span class="nav_bar_name">Sent</span></a></li>
+                <li><a  class="nav_bar_label"><i class="bx bx-time-five"></i><span class="nav_bar_name">Snoozed</span></a></li>
+                <li><a  class="nav_bar_label"><i class="bx bx-note bx-flip-vertical"></i><span class="nav_bar_name">Draft</span></a></li>
+                
+                
+            </ul>
+        </div>
+    
+    
+    <!-- MAILS -->
+    
+    
+        <div class="main-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search mail">
+                <button><i class='bx bx-search' ></i></button>
+              </div>
+            <div id="data" class="mail-list">
+             
+
+              
+              </div>
+             
+            </div>
+          </div>
+
+    </section>
+   
+</body>
+</html>
