@@ -1,92 +1,85 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-    font-family: "Poppins", sans-serif;
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: #f6f8fc;
-    overflow-x: hidden;
-  }
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f6f8fc;
+  overflow-x: hidden;
+}
 
+.seccion {
+  display: flex;
+}
 
-  .seccion{
-     display: flex;
-  }
-
-  .main-content {
-    /* display: flex;
+.main-content {
+  /* display: flex;
     flex-direction: column; */
-    align-items: center;
-    height: 100%;
-    width: 80%;
-    margin-left: 3rem;
-  }
-  
-  .mail-list {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    border-radius: 10px;
-    overflow-x: hidden;
-    background-color: white;
-    /* margin-left: 3rem; */
-    cursor: pointer;
-  }
-  
-  .mail-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-    border-bottom: 1px solid #ddd;
-  }
+  align-items: center;
+  height: 100%;
+  width: 80%;
+  margin-left: 3rem;
+}
 
-  .mail-item:hover{
-    background-color: rgba(128, 128, 128, 0.125);
-  }
-  
-  .mail-item:last-child {
-    border-bottom: none;
-  }
-  
-  .mail-item-icon {
-    display: flex;
-    align-items: center;
-    margin-right: 1rem;
-  }
-  
-  .mail-item-icon input[type="checkbox"] {
-    margin: 0;
-    margin-right: 0.5rem;
-  }
-  
-  .mail-sender {
-    font-weight: bold;
-    margin-right: auto;
-  }
-  
-  .mail-subject {
-    margin-right: 40rem;
-    
-    
-  }
-  
-  .mail-time {
-    font-size: 0.8rem;
-    color: black;
-    margin-left: 1rem;
-  }
-  
+.mail-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 10px;
 
+  background-color: white;
+  /* margin-left: 3rem; */
+  cursor: pointer;
+}
 
+.mail-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
 
+.mail-item:hover {
+  background-color: rgba(128, 128, 128, 0.125);
+  cursor: pointer;
+}
+
+.mail-item:last-child {
+  border-bottom: none;
+}
+
+.mail-item-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.mail-item-icon input[type="checkbox"] {
+  margin: 0;
+  margin-right: 0.5rem;
+}
+
+.mail-sender {
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.mail-subject {
+  margin-right: 40rem;
+}
+
+.mail-time {
+  font-size: 0.8rem;
+  color: black;
+  margin-left: 1rem;
+}
 
 .search-bar {
   display: flex;
@@ -96,9 +89,8 @@ body {
   width: 700px;
   border-radius: 10px;
   border-radius: 10px;
-    background-color: #eaf1fb;
-    margin-top: 1rem;
-    
+  background-color: #eaf1fb;
+  margin-top: 1rem;
 }
 
 .search-bar input {
@@ -110,8 +102,7 @@ body {
   /* padding: 0.5rem; */
   /* font-size: 1rem; */
   border-radius: 10px;
-    background-color: #eaf1fb;
-
+  background-color: #eaf1fb;
 }
 
 .search-bar button {
@@ -120,225 +111,271 @@ body {
   padding: 0;
   margin-left: 0.5rem;
   font-size: 1.2rem;
-  
 }
-
 
 /* .fa-search {
   font-size: 1.2rem;
 }
  */
 
- .bx-search{
+.bx-search {
   font-size: 20px;
- }
+}
 
 .wrapper {
-  
-  overflow-x: hidden;
-    margin-left: 15px;
-    margin-top: 15px;
-    height: 100%;
-    
-  }
-  .wrapper .logo {
-    display: flex;
-    align-items: center;
-    margin-left: 1.5rem;
-  }
-  .wrapper .logo #menu_bar {
-    color: #5f6368;
-    font-size: 25px;
-  }
-  
-  .logo i {
-    padding: 0 5px;
-  }
-  
-  .wrapper .nav_bar {
-    margin-top: 15px;
-    margin-right: 20%;
+  margin-left: 15px;
+  margin-top: 15px;
+  height: 100%;
+}
+.wrapper .logo {
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+.wrapper .logo #menu_bar {
+  color: #5f6368;
+  font-size: 25px;
+}
+
+.logo i {
+  padding: 0 5px;
+}
+
+.wrapper .nav_bar {
+  margin-top: 15px;
+  margin-right: 20%;
 
   cursor: pointer;
-  }
-  
-  .wrapper .nav_bar li {
-    list-style: none;
-    position: relative;
+}
+
+.wrapper .nav_bar li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+
+.wrapper .nav_bar li .nav_bar_label {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper ul li a i {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.submenu {
+  margin: 15px 25px;
+}
+.submenu li {
+  margin-bottom: 5px;
+}
+
+.submenu li a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+.button_compose a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.button_compose i {
+  padding: 0 10px;
+  font-size: 20px;
+}
+.spacing {
+  height: 0;
+  margin: 15px;
+}
+
+.button_compose {
+  background-color: #c2e7ff;
+  height: 50px;
+  width: 140px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.button_compose:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nav_bar li a:hover {
+  background: #d3d3d3;
+}
+.nav_bar li a {
+  height: 30px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.nav_bar:hover .bx-chevron-down {
+  display: block;
+}
+.nav_bar:hover .button_compose {
+  width: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.email-popup {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 70%;
+  /* transform: translate(-50%, -50%); */
+  z-index: 1;
+  width: 500px;
+  height: 30rem;
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  visibility: hidden;
+}
+
+.email-popup :nth-last-child(2) {
+  height: 60%;
+}
+
+.email-popup :nth-last-child(4) {
+  height: 6%;
+}
+
+.primerhijo {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+}
+.primerhijo i {
+  margin-left: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.popup-item {
+  height: 10%;
+  width: 90%;
+  border-bottom: 1px solid bla;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.popup-btn {
+  height: 10%;
+  width: 20%;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 255, 0.499);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content {
     width: 100%;
-    padding-bottom: 10px;
-    padding-right: 10px;
-  }
-  
-  .wrapper .nav_bar li .nav_bar_label {
-    text-decoration: none;
-    font-size: 16px;
-    color: black;
-    display: flex;
-    align-items: center;
-  }
-  
-  .wrapper ul li a i {
-    font-size: 20px;
-    padding: 0 10px;
-  }
-  
-  .submenu {
-    margin: 15px 25px;
-  }
-  .submenu li {
-    margin-bottom: 5px;
-  }
-  
-  .submenu li a {
-    text-decoration: none;
-    font-size: 15px;
-    color: black;
-    display: flex;
-    align-items: center;
-  }
-  
-  .button_compose a {
-    text-decoration: none;
-    font-size: 16px;
-    color: black;
-    font-weight: bold;
-  }
-  
-  .button_compose i {
-    padding: 0 10px;
-    font-size: 20px;
-  }
-  .spacing {
-    height: 0;
-    margin: 15px;
-  }
-  
-  .button_compose {
-    background-color: #c2e7ff;
-    height: 50px;
-    width: 140px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .button_compose:hover {
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    margin: 1px;
   }
 
-
-  .nav_bar li a:hover {
-    background: #d3d3d3;
-  }
-  .nav_bar li a {
-    height: 30px;
-    border-radius: 5px;
-    transition: all 0.5s ease;
-  }
-  .nav_bar:hover .bx-chevron-down {
-    display: block;
-  }
-  .nav_bar:hover .button_compose {
-    width: 140px;
-    display: flex;
-    align-items: center;
+  .wrapper {
+    width: 230px;
+    margin-top: 20px;
   }
 
-
-
-
- 
-
-
-  @media only screen and (max-width: 768px) {
-    .main-content {
-      width: 100%;
-      margin: 0;
-      overflow: hidden;
-    }
-    
-  
-    .wrapper{
-      margin: 0;
-      width: 250px;
-      margin-top: 20px;
-    }
-
-   .wrapper .logo{
+  .wrapper .logo {
     margin-left: 0rem;
-   }
-    .mail-list {
-      margin-left: 0;
-      border-radius: 10px;
-    }
-    .logo{
-      margin-left: 0;
-    }
-    .mail-item {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0.5rem;
-      border-bottom: 1px solid #ddd;
-    }
-    
-    .mail-item:last-child {
-      border-bottom: none;
-    }
-    
-    .mail-item-icon {
-      margin-right: 0.5rem;
-    }
-    
-    .mail-sender {
-      margin-right: 0;
-      margin-bottom: 0.5rem;
-    }
-    
-    .mail-subject {
-      margin-right: 0;
-      margin-bottom: 0.5rem;
-    }
-    
-    .mail-time {
-      margin-left: 0;
-    }
-    
-    .search-bar input[type="text"] {
-      height: 1.5rem;
-      font-size: 0.8rem;
-    }
-    .search-bar{
-      width: 180px;
-      margin-left: 20px;
-    }
-    
-    .search-bar button {
-      margin-left: 0.3rem;
-      font-size: 1rem;
-    }
-    
-    .submenu {
-      margin: 0.5rem 0.2rem;
-    }
-    
-    .submenu li {
-      margin-bottom: 0.3rem;
-    }
-    
-    .button_compose {
-      height: 40px;
-      width: 120px;
-      border-radius: 5px;
-    }
-    
-    .button_compose i {
-      font-size: 1rem;
-    }
-    
-    .nav_bar li a {
-      height: 25px;
-      font-size: 0.8rem;
-      border-radius: 3px;
-    }
   }
+  .mail-list {
+    margin-left: 0;
+    border-radius: 10px;
+  }
+  .logo {
+    margin-left: 0;
+  }
+  .mail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .mail-item:last-child {
+    border-bottom: none;
+  }
+
+  .mail-item-icon {
+    margin-right: 0.5rem;
+  }
+
+  .mail-sender {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .mail-subject {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .mail-time {
+    margin-left: 0;
+  }
+
+  .search-bar input[type="text"] {
+    height: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .search-bar {
+    width: 180px;
+  }
+
+  .search-bar button {
+    margin-left: 0.3rem;
+    font-size: 1rem;
+  }
+
+  .submenu {
+    margin: 0.5rem 0.2rem;
+  }
+
+  .submenu li {
+    margin-bottom: 0.3rem;
+  }
+
+  .button_compose {
+    height: 40px;
+    width: 120px;
+    border-radius: 5px;
+  }
+
+  .button_compose i {
+    font-size: 1rem;
+  }
+
+  .nav_bar li a {
+    height: 25px;
+    font-size: 0.8rem;
+    border-radius: 3px;
+  }
+  .email-popup {
+    top: 43%;
+    left: 20%;
+    width: 300px;
+  }
+}
